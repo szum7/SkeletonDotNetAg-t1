@@ -3,3 +3,11 @@
 - create Black Solution to C:\Users\arsz01\source\repos\SkeletonDotNetAg-t1 as "SkeletonDotNetAgT1"
 - create Class Library (.NET Core) project as "Notes" for note documents.
 - create SQL Server Database Project as "Skeleton.Database"
+
+- create Class Library (.NET Core) project called "Skeleton.DAL"
+- create runnable .NET Core Console App project called "Skeleton.Runner" (may be unnecessary)
+- install Microsoft.EntityFrameworkCore
+- install Microsoft.EntityFrameworkCore.Design
+- Install-Package Microsoft.EntityFrameworkCore.Tools
+- install Microsoft.EntityFrameworkCore.SqlServer
+x login failed
