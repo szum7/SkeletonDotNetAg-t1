@@ -1,0 +1,5 @@
+﻿- create repo
+- git clone repo to C:\Users\arsz01\source\repos\
+- create Black Solution to C:\Users\arsz01\source\repos\SkeletonDotNetAg-t1 as "SkeletonDotNetAgT1"
+- create Class Library (.NET Core) project as "Notes" for note documents.
+- create SQL Server Database Project as "Skeleton.Database"
