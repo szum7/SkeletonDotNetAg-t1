@@ -1,12 +1,14 @@
-﻿- create repo
+﻿Solution setup
+- create repo on github
 - git clone repo to C:\Users\arsz01\source\repos\
 - create Black Solution to C:\Users\arsz01\source\repos\SkeletonDotNetAg-t1 as "SkeletonDotNetAgT1"
 - create Class Library (.NET Core) project as "Notes" for note documents.
-- create SQL Server Database Project as "Skeleton.Database"
+- create "Skeleton.Database" (SQL Server Database Project)
+- create "Skeleton.DAL" (Class Library (.NET Core) project)
+- create "Skeleton.BL" (Class Library (.NET Core) project)
+- create runnable .NET Core Console App project called "Skeleton.Runner" (may be unnecessary)
 
 Setup .DAL for entity framework
-- create Class Library (.NET Core) project called "Skeleton.DAL"
-- create runnable .NET Core Console App project called "Skeleton.Runner" (may be unnecessary)
 - install Microsoft.EntityFrameworkCore in DAL
 - install Microsoft.EntityFrameworkCore.Design in DAL
 - Install-Package Microsoft.EntityFrameworkCore.Tools in DAL
