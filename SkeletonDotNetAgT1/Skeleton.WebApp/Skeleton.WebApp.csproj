@@ -28,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\pages\test-table-page\test-table.page.ts" />
     <None Remove="ClientApp\src\app_safe\app.component.html" />
     <None Remove="ClientApp\src\app_safe\app.component.ts" />
     <None Remove="ClientApp\src\app_safe\app.module.ts" />
@@ -46,6 +47,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Skeleton.BL\Skeleton.BL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\services\test-table-service\models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\pages\test-table-page\test-table.page.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

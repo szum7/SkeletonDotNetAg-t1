@@ -13,12 +13,12 @@ import { LoadingScreenComponent } from './components/loading-screen/loading-scre
 
 // Pages
 import { HomePage } from './pages/home-page/home.page';
-import { TransactionsPage } from './pages/transactions-page/transactions.page';
+import { TestTablePage } from './pages/test-table-page/test-table.page';
 
 // Services
 import { LoadingScreenService } from './services/loading-screen-service/loading-screen.service';
 import { RouterService } from './services/router-service/router.service';
-import { TransactionService } from './services/transaction-service/transaction.service';
+import { TestTableService } from './services/test-table-service/test-table.service';
 import { BaseHttpService } from './services/base-http.service';
 
 @NgModule({
@@ -29,7 +29,7 @@ import { BaseHttpService } from './services/base-http.service';
     LoadingScreenComponent,
     // Pages
     HomePage,
-    TransactionsPage
+    TestTablePage
   ],
   imports: [
     BrowserModule,
@@ -37,14 +37,14 @@ import { BaseHttpService } from './services/base-http.service';
     FontAwesomeModule,
     RouterModule.forRoot([
       { path: '', component: HomePage },
-      { path: 'transactions', component: TransactionsPage },
+      { path: 'testtable', component: TestTablePage },
     ], { useHash: true })
   ],
   providers: [
     LoadingScreenService,
     RouterService,
     BaseHttpService,
-    TransactionService
+    TestTableService
   ],
   bootstrap: [AppComponent]
 })
