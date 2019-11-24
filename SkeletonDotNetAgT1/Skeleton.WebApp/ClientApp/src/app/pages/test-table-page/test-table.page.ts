@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 import { TestTableService } from '../../services/test-table-service/test-table.service';
 
 @Component({
-    selector: 'app-transactions-page',
-    templateUrl: './transactions.page.html',
-    styleUrls: ['./transactions.page.scss']
+    selector: 'app-test-table-page',
+    templateUrl: './test-table.page.html'
 })
 export class TestTablePage {
 

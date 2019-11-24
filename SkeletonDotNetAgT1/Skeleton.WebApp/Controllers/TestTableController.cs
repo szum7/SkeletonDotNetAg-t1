@@ -10,7 +10,7 @@ namespace Skeleton.WebApp.Controllers
         [HttpGet("testcall")]
         public ActionResult TestCall()
         {
-            return Ok("Test call got it's response. I am that response.");
+            return Ok(new { message = "Test call got it's response. I am that response." });
         }
 
         [HttpGet("get")]

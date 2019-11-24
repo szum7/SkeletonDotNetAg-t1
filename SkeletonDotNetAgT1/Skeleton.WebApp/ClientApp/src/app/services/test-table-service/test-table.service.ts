@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 class TestTableServiceMap {
-    protected extractTransactions(response: any): any {
+    protected dummyPipe(response: any): any {
         return response;
     }
 }
@@ -27,13 +27,13 @@ export class TestTableService extends TestTableServiceLogic {
     testCall(): Observable<any> {
         return this.http
             .get<any>(this.baseUrl + 'api/TestTable/testcall')
-        .pipe(map(this.extractTransactions));
+            .pipe(map(this.dummyPipe));
     }
 
     get(): Observable<any> {
         return this.http
             .get<any>(this.baseUrl + 'api/TestTable/get')
-            .pipe(map(this.extractTransactions));
+            .pipe(map(this.dummyPipe));
     }
 
 }
